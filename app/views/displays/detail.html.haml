@@ -1,0 +1,73 @@
+.detail_page
+    .header__inner
+      .header__inner__main
+        .header__inner__main__icon
+          =image_tag 'logo.png', class: 'furima-logo', size: '140x40'
+        .header__inner__main__search-box
+          .header__inner__main__search-box__input
+            キーワードから探す
+          .header__inner__main__search-box__search
+            =image_tag 'icon-search 1.png', class: 'search-icon', size: '19x19'
+      .header__inner__navi
+        .header__inner__navi__left
+          .header__inner__navi__left__category
+            カテゴリー
+          .header__inner__navi__left__bland
+            ブランド
+        .header__inner__navi__right
+          .header__inner__navi__right__login
+            ログイン
+          .header__inner__navi__right__new
+            新規会員登録
+
+    .breadcrumbs
+      .ul
+      .ul
+      .ul
+  
+    .main
+      .main-box
+        .content
+          .goods-box
+            .goods-box__name
+              product2
+            .goods-box__photo
+              %ul
+                %li
+                  =image_tag 180x180
+                  %ul
+                    %li
+                      =image_tag 140x87
+                    %li
+                      =image_tag 140x87
+                    %li
+                      =image_tag 140x87
+            .goods-box__price
+              ¥20,000
+            .goods-box__price_tax
+              %span
+              (税込み)
+              %span
+              送料込み
+            .goods-box__comment
+              "お腹すいた・・・"
+            .goods-box__table
+
+
+            .goods-box__another-area
+              = another-area_btn 'お気に入り', class: 'like-btn'
+                = icon('fa', 'fa-star')
+                  " お気に入り 0
+                  "
+              = another-area_btn '通報' , class: 'report-btn'
+                = link to "#"
+                = icon('fa', 'fa-flag')
+                  " 不適切な商品の通報
+                  "
+          .comment-box
+
+    .content
+   
+  
+  .banner
+  .footer
